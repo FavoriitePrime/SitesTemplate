@@ -5,3 +5,17 @@
     top: 100px;
     width: 100%;
 }
+@media (min-width: 375px) {
+
+    .VsePloha{
+        display: none;
+    }
+}
+@media (max-width: 375px) {
+    .content{
+        display: none;
+    }
+    .VsePloha{
+        display: block;
+    }
+}

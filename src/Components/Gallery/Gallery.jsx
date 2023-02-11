@@ -9,7 +9,7 @@ export default function Gallery() {
         <div id="Gallery" className="gallery-box">
             <div className="content-gallery">
                 <div className="gallery-card">
-                    <img className="card-image" src={NightLightImg} alt="Help" />
+                    <img className={"card-image" }  src={NightLightImg} alt="Help" />
                     <div className="card-content">
                         Без авторских отчислений — все доходы принадлежат вам
                     </div>

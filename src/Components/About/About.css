@@ -23,18 +23,25 @@
 .about-card{
     display: flex;
     flex-direction: column;
-    width: 45%;
-    margin-bottom: 5%;
+    width: 550px;
+    margin-bottom: 15px;
 }
 .about-card-image{
     border: solid white;
     border-width: 1px 1px 0px 1px;
     border-radius: 15px 15px 0 0;
-    height: 80%;
+    height: 60%;
+    object-fit: cover;
 }
 .about-card-content{
     padding-left: 20px;
     border: 1px solid white;
     border-radius: 0 0 15px 15px;
-    height: 30%;
+    height: 40%;
+}
+.about-card-content-title{
+    font-size: 25px;
+}
+.about-card-content-text{
+    font-size: 18px;
 }

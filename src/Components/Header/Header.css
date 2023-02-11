@@ -1,4 +1,4 @@
-.header{
+.header {
     position: fixed;
     z-index: 1;
     display: flex;
@@ -8,21 +8,24 @@
     top: 0px;
     left: 0px;
 }
-.header-box{
+
+.header-box {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100px;
     width: 80%;
 }
-.header-logo{
+
+.header-logo {
     font-size: 32px;
 }
-.header-logo font{
-    text-shadow:  3px -1px 2px lightblue;
+
+.header-logo font {
+    text-shadow: 3px -1px 2px lightblue;
 }
 
-.header-navigation{
+.header-navigation {
     display: flex;
     width: 50%;
     justify-content: space-around;
@@ -32,15 +35,94 @@
     text-decoration: underline transparent;
     text-align: center;
     color: white;
-
     border: 2px solid white;
     border-radius: 15px;
     width: 150px;
-
-    transition: text-decoration 0.5s;
+    transition: text-decoration 0.5s, width 3s;
 }
-.header-navigation a:hover{
+
+.header-navigation-active a {
+    width: 90%;
+    text-decoration: underline transparent;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    transition: text-decoration 0.5s, width 2s;
+}
+
+.header-navigation a:hover {
     color: lightskyblue;
     border: 2px solid lightskyblue;
-    transition: color 0.5s, border 0.5s ;
+    transition: color 0.5s, border 0.5s;
+}
+
+.header-navigation-active a:hover {
+    color: lightskyblue;
+    border: 2px solid lightskyblue;
+    transition: color 0.5s, border 0.5s;
+}
+@media (min-width: 1600px) {
+    .burger-btn {
+        display: none;
+    }
+}
+@media (max-width: 1600px) and (min-width:960px) {
+    .burger-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 960px) and (min-width:375px) {
+    .header-navigation {
+        justify-content: start;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 300px;
+        height: 100vh;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        top: 100px;
+        right: -100%;
+        transition: right 1s;
+    }
+
+    .header-navigation-active {
+        justify-content: start;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 300px;
+        height: 100vh;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        top: 100px;
+        right: 0;
+        transition: right 1s;
+    }
+
+    .burger-btn {
+        width: 43px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: transparent;
+        border: none;
+    }
+    .burger-btn:hover {
+        background-color: rgba(135, 206, 250, 0.400);
+        border-radius: 5px;
+    }
+
+    .burger-btn span {
+        color: transparent;
+        height: 5px;
+        width: 32px;
+        background-color: white;
+    }
+}
+@media (max-width: 375px) {
+    .header{
+        display: none;
+    }
 }

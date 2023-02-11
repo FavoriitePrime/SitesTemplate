@@ -1,8 +1,6 @@
 import React from "react";
 import "./Content.css"
 
-
-
 import Gallery from "../Gallery/Gallery"
 import About from "../About/About";
 import Games from "../Games/Games";
@@ -10,13 +8,17 @@ import Games from "../Games/Games";
 export default function Content() {
 
     return (
-        <div className="content">
-            <Gallery/>
-            <About/>
-            <Games/>
-            <div className="footer">
-
+        <>
+            <div className="content">
+                <Gallery />
+                <About />
+                <Games />
             </div>
-        </div>
+            <div className="VsePloha">
+                Все очень плохо. 
+                <br/>
+                Твой девайс пробил дно.
+            </div>
+        </>
     );
 }
