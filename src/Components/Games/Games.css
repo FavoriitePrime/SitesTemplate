@@ -1,0 +1,47 @@
+.games-box{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.games-flex{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.games-stickyList-box{
+    display: flex;
+    box-sizing: border-box;
+    height: max-content;
+    width: 80%;
+}
+.games-stickyList{
+    height: 90vh;
+    top: 100px;
+    width: 50%;
+    position: sticky;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.games-stickyList-title{
+    font-size: 32px;
+    margin-left: 15px;
+}
+.games-stickyList li{
+    margin-top: 20px;
+    cursor: pointer;
+}
+.games-contentBox{
+    width: 50%;
+}
+.games-contentBox-card{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.games-contentBox-card-image{
+    width: 100%;
+}
+
+.games-contentBox-card-title{
+    font-size: 32px;
+    margin-top: 50px;
+}
