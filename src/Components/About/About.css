@@ -1,40 +1,49 @@
-.about-box{
-    margin-top: 50px;
+.about-box {
+  margin-top: 50px;
 }
-.about-title{
-    position: sticky;
-    top: 100px;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 32px;
-    text-align: center;
+.about-title {
+  position: sticky;
+  top: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 32px;
+  text-align: center;
 }
-.about-cards-box{
-    display: flex;
-    margin-top: 50px;
-    width: 100%;
-    justify-content: center;
+.about-cards-box {
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+  justify-content: center;
 }
-.about-cards-collection{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 80%;
+.about-cards-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
 }
-.about-card{
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-    margin-bottom: 5%;
+.about-card {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-bottom: 5%;
 }
-.about-card-image{
-    border: solid white;
-    border-width: 1px 1px 0px 1px;
-    border-radius: 15px 15px 0 0;
-    height: 80%;
+.about-card-image {
+  border: solid;
+  border-color: linear-gradient(
+    180deg,
+    rgba(118, 15, 249, 1) 0%,
+    rgba(215, 17, 112, 1) 100%
+  );
+  border-width: 1px 1px 0px 1px;
+  border-radius: 15px 15px 0 0;
+  height: 80%;
 }
-.about-card-content{
-    padding-left: 20px;
-    border: 1px solid white;
-    border-radius: 0 0 15px 15px;
-    height: 30%;
+.about-card-content {
+  padding-left: 10px;
+  border: 1px solid white;
+  border-radius: 0 0 15px 15px;
+  height: 30%;
+}
+
+.about-card-content-header {
+  font-size: 22px;
 }
