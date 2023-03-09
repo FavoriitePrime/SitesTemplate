@@ -11,6 +11,7 @@ export default function Post(props) {
         />
         <div className="games-contentBox-card-title">{props.header}</div>
         <div>{props.content}</div>
+        <div>{props.tags}</div>
       </div>
     </div>
   );
