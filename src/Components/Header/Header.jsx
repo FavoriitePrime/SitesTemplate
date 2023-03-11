@@ -18,7 +18,7 @@ export default function Header() {
                     Unity.<font>3D</font>
                 </div>
                 <Clock />
-                <div className={ isActive? "header-navigation": "header-navigation-active"}>
+                <div className={ isActive? "header-navigation-active": "header-navigation"}>
                     <Link to="Gallery" smooth={true}>Main</Link>
                     <Link to="About" smooth={true}>About Unity</Link>
                     <Link to="Games" smooth={true}>Games</Link>
